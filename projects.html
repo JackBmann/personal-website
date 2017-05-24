@@ -2,26 +2,33 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-    <title>Jack Baumann's Personal Website</title>
-
-		<!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+		<title>Jack Baumann's Personal Website</title>
+		<meta name="keywords" content="Jack, Baumann">
+		<meta name="description" content="Jack Baumann's Personal Website">
+		<meta name="application-name" content="Jack Baumann's Personal Website"/>
+		<!-- Favicon courtesy of http://www.favicomatic.com -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="msapplication-TileImage" content="images/mstile-144x144.png" />
+		<!-- Import Google Icon Font -->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Import materialize.css -->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<!-- Let browser know website is optimized for mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<!-- CSS  -->
-	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	</head>
 	<body>
 		<header>
 			<nav class="teal" role="navigation">
 		    <div class="nav-wrapper container">
-		      <a href="#!" class="brand-logo">Jack Baumann</a>
+		      <a href="home.html" class="brand-logo">Jack Baumann</a>
 		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		      <ul class="right hide-on-med-and-down">
 						<li><a href="home.html">Home</a></li>
@@ -40,7 +47,33 @@
 		</header>
 
 		<main class="main">
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="container">
+				<div class="section">
+					<h5>I worked on the following notable projects throughout High School and College:</h5>
+					<br>
+          <div class="card medium sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="images/stocktalk-demo.png">
+              <span class="card-title">StockTalk</span>
+            </div>
+            <div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">StockTalk: The (not so) Ideal Stock Market<i class="material-icons right">more_vert</i></span>
+							<p>A stock market game based on Twitter's criticism of tech companies</p>
+            </div>
+            <div class="card-action">
+              <a href="https://devpost.com/software/hackrice-stockapp">View StockTalk on Devpost</a>
+							<a href="https://github.com/bdeloeste/hackrice-stockapp">View StockTalk on GitHub</a>
+            </div>
+						<div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">StockTalk: The (not so) Ideal Stock Market<i class="material-icons right">close</i></span>
+							<p>A multi-player investment game in which the stock prices of three tech giants (Google, Microsoft, and Facebook) are controlled by the positive and negative tweets each company receives. For each positive tweet the price of the stock rises, and for each negative tweet, it falls. The stock prices are controlled traditionally by supply and demand too, so the more people buy stock of one company, the higher that company's stock price rises.</p>
+							<p>The webapp used python to scrape and analyze tweets, javascript to control the game, and HTML and CSS for the web user interface.</p>
+							<p>A friend, two coleagues, and I built StockTalk in less than 24 hours at HackRice 2016. I worked primarily with the front end web interface and did a lot of research on how each part of the project would fit together.</p>
+							<p>StockTalk won the PROS sponsor award for best finance-related game.</p>
+				    </div>
+          </div>
+				</div>
+			</div>
 		</main>
 
 		<footer class="page-footer teal">
@@ -64,7 +97,7 @@
       </div>
 			<!-- Copyright/Last Updated Container -->
       <div class="footer-copyright">
-        <div class="container"> Last Updated: May 19, 2017 by Jack Baumann </div>
+        <div class="container"> Last Updated: May 24, 2017 by Jack Baumann </div>
       </div>
     </footer>
 
