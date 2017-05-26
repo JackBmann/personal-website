@@ -3,3 +3,7 @@
  * Overrides Materialize defaults
  * Written by Jack Baumann
  */
+ /*The carousel has a problem where it loads with a height of 0 if images are cached.*/
+ /*.carousel-slider {
+     height: 300px !important;
+ }*/
