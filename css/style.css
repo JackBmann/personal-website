@@ -17,3 +17,11 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+.parallax-container {
+  height: 400px;
+}
+
+.icon-block i {
+  font-size: 75px;
+}
