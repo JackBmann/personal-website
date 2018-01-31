@@ -24,85 +24,87 @@
 		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	</head>
+
 	<body>
 		<header>
-			<nav class="teal" role="navigation">
-		    <div class="nav-wrapper container">
-		      <a href="home.html" class="brand-logo">Jack Baumann</a>
-		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-		      <ul class="right hide-on-med-and-down">
-						<li><a href="home.html">Home</a></li>
-			      <li class="active"><a href="photos.html">Photos</a></li>
-			      <li><a href="projects.html">Projects</a></li>
-			      <li><a href="contact.html">Contact</a></li>
-		      </ul>
-		      <ul class="side-nav" id="mobile-demo">
-						<li><a href="home.html">Home</a></li>
-			      <li class="active"><a href="photos.html">Photos</a></li>
-			      <li><a href="projects.html">Projects</a></li>
-			      <li><a href="contact.html">Contact</a></li>
-		      </ul>
-		    </div>
-		  </nav>
+            <nav class="teal" role="navigation">
+                <div class="nav-wrapper container">
+                    <a href="home.html" class="brand-logo">Jack Baumann</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="home.html">Home</a></li>
+                        <li class="active"><a href="photos.html">Photos</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="home.html">Home</a></li>
+                        <li class="active"><a href="photos.html">Photos</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
 		</header>
 
 		<main class="main">
-			<div class="container">
-				<h5> Pictures from my travels abroad: </h5>
-				<div class="row">
-					<div class="col s10 offset-s1">
-						<div class="carousel carousel-slider" data-indicators="true" onclick="clearInterval(timerVar)">
-							<a class="carousel-item" href="images/barcelona_placa.jpg" target="_blank"><img src="images/barcelona_placa.jpg"></a>
-							<a class="carousel-item" href="images/assisi_basilica.jpg" target="_blank"><img src="images/assisi_basilica.jpg"></a>
-							<a class="carousel-item" href="images/rome_colosseum.jpg" target="_blank"><img src="images/rome_colosseum.jpg"></a>
-							<a class="carousel-item" href="images/delphi_temple.jpg" target="_blank"><img src="images/delphi_temple.jpg"></a>
-							<a class="carousel-item" href="images/athens_erechtion.jpg" target="_blank"><img src="images/athens_erechtion.jpg"></a>
-							<a class="carousel-item" href="images/nafplion_fortress.jpg" target="_blank"><img src="images/nafplion_fortress.jpg"></a>
-							<a class="carousel-item" href="images/vienna_concert.jpg" target="_blank"><img src="images/vienna_concert.jpg"></a>
-							<a class="carousel-item" href="images/rome_villa_adriana.jpg" target="_blank"><img src="images/rome_villa_adriana.jpg"></a>
-							<a class="carousel-item" href="images/rome_vatican.jpg" target="_blank"><img src="images/rome_vatican.jpg"></a>
-							<a class="carousel-item" href="images/assisi_monastery.jpg" target="_blank"><img src="images/assisi_monastery.jpg"></a>
-							<a class="carousel-item" href="images/florence_duomo.jpg" target="_blank"><img src="images/florence_duomo.jpg"></a>
-							<a class="carousel-item" href="images/salzburg_alps.jpg" target="_blank"><img src="images/salzburg_alps.jpg"></a>
-					  </div>
-						<!-- Create a timer to transition to the next image every 3 seconds, and stop transitioning if an image is clicked or manually scrolled. -->
-						<script>
-							var timerVar = setInterval(timer, 3000);
-							function timer() {
-							    $('.carousel').carousel('next');
-							}
-						</script>
-					</div>
-				</div>
-				<p> I spent the Spring 2017 semester studying in Rome and traveled to: Milan, Umbria (Perugia, Assisi, Orvieto), Spain (Madrid, Barcelona),
-					United Kingdom (London), Bari, Greece (Delphi, Athens, Corinth, Nafplion, Mycenae, Epidauros, Olympia, Patras), Hungary (Budapest), Austria (Vienna),
-					Czechia (Prague), Germany (Berlin, Munich), Assisi (again), Venice, Florence, Belgium (Brussels), Austria (Vienna, Salzburg), and Germany (Berchtesgaden). </p>
-			</div>
+            <div class="container">
+                <h5> Pictures from my travels abroad: </h5>
+                <br>
+                <div class="row">
+                    <div class="col s10 offset-s1">
+                        <div class="carousel carousel-slider" data-indicators="true" onclick="clearInterval(timerVar)">
+                            <a class="carousel-item" href="images/barcelona_placa.jpg" target="_blank"><img src="images/barcelona_placa.jpg"></a>
+                            <a class="carousel-item" href="images/assisi_basilica.jpg" target="_blank"><img src="images/assisi_basilica.jpg"></a>
+                            <a class="carousel-item" href="images/rome_colosseum.jpg" target="_blank"><img src="images/rome_colosseum.jpg"></a>
+                            <a class="carousel-item" href="images/delphi_temple.jpg" target="_blank"><img src="images/delphi_temple.jpg"></a>
+                            <a class="carousel-item" href="images/athens_erechtion.jpg" target="_blank"><img src="images/athens_erechtion.jpg"></a>
+                            <a class="carousel-item" href="images/nafplion_fortress.jpg" target="_blank"><img src="images/nafplion_fortress.jpg"></a>
+                            <a class="carousel-item" href="images/vienna_concert.jpg" target="_blank"><img src="images/vienna_concert.jpg"></a>
+                            <a class="carousel-item" href="images/rome_villa_adriana.jpg" target="_blank"><img src="images/rome_villa_adriana.jpg"></a>
+                            <a class="carousel-item" href="images/rome_vatican.jpg" target="_blank"><img src="images/rome_vatican.jpg"></a>
+                            <a class="carousel-item" href="images/assisi_monastery.jpg" target="_blank"><img src="images/assisi_monastery.jpg"></a>
+                            <a class="carousel-item" href="images/florence_duomo.jpg" target="_blank"><img src="images/florence_duomo.jpg"></a>
+                            <a class="carousel-item" href="images/salzburg_alps.jpg" target="_blank"><img src="images/salzburg_alps.jpg"></a>
+                        </div>
+                        <!-- Create a timer to transition to the next image every 3 seconds, and stop transitioning if an image is clicked or manually scrolled. -->
+                        <script>
+                            var timerVar = setInterval(timer, 3000);
+                            function timer() {
+                                $('.carousel').carousel('next');
+                            }
+                        </script>
+                    </div>
+                </div>
+                <p> I spent the Spring 2017 semester studying in Rome and traveled to: Milan, Umbria (Perugia, Assisi, Orvieto), Spain (Madrid, Barcelona),
+                    United Kingdom (London), Bari, Greece (Delphi, Athens, Corinth, Nafplion, Mycenae, Epidauros, Olympia, Patras), Hungary (Budapest), Austria (Vienna),
+                    Czechia (Prague), Germany (Berlin, Munich), Assisi (again), Venice, Florence, Belgium (Brussels), Austria (Vienna, Salzburg), and Germany (Berchtesgaden). </p>
+            </div>
 		</main>
 
 		<footer class="page-footer teal">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-						<h5 class="white-text">Website Credits</h5>
-						<p class="grey-text text-lighten-4">This website was built with <a href="http://materializecss.com/" target="_blank">Materialize</a>, adhears to the Material Design standards, and is mobile-friendly.</p>
-          </div>
-					<!-- Connect with me on Twitter, Github, and LinkedIn -->
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Connect with Me!</h5>
-						<a class="twitter-follow-button" href="https://twitter.com/JackBmann" data-size="large">Follow @JackBmann</a>
-						<br>
-						<a class="github-button" href="https://github.com/JackBmann" data-size="large" data-show-count="true" aria-label="Follow @JackBmann on GitHub">Follow @JackBmann</a>
-						<br>
-						<a href="https://www.linkedin.com/pub/jack-baumann/108/b25/776" target="_blank"><img src="http://s.c.lnkd.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Jack Baumann's profile on LinkedIn"></a>
-						<br>
-						<div class="g-follow" data-annotation="bubble" data-height="24" data-href="https://plus.google.com/u/0/109640717924288069352" data-rel="author"></div>
-        </div>
-      </div>
-			<!-- Copyright/Last Updated Container -->
-      <div class="footer-copyright">
-        <div class="container"> Last Updated: January 31, 2018 by Jack Baumann </div>
-      </div>
+			      <div class="container">
+			        <div class="row">
+			          <div class="col l6 s12">
+									<h5 class="white-text">Website Credits</h5>
+									<p class="grey-text text-lighten-4">This website was built with <a href="http://materializecss.com/" target="_blank">Materialize</a>, adheres to the Material Design standards, and is mobile-friendly.</p>
+			          </div>
+								<!-- Connect with me on Twitter, Github, and LinkedIn -->
+			          <div class="col l4 offset-l2 s12">
+			            <h5 class="white-text">Connect with Me!</h5>
+									<a class="twitter-follow-button" href="https://twitter.com/JackBmann" data-size="large">Follow @JackBmann</a>
+									<br>
+									<a class="github-button" href="https://github.com/JackBmann" data-size="large" data-show-count="true" aria-label="Follow @JackBmann on GitHub">Follow @JackBmann</a>
+									<br>
+									<a href="https://www.linkedin.com/pub/jack-baumann/108/b25/776" target="_blank"><img src="http://s.c.lnkd.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Jack Baumann's profile on LinkedIn"></a>
+									<br>
+									<div class="g-follow" data-annotation="bubble" data-height="24" data-href="https://plus.google.com/u/0/109640717924288069352" data-rel="author"></div>
+			        </div>
+			      </div>
+						<!-- Copyright/Last Updated Container -->
+			      <div class="footer-copyright">
+			        <div class="container"> Last Updated: January 31, 2018 by Jack Baumann </div>
+			      </div>
     </footer>
 
 		<!-- Import javascripts -->

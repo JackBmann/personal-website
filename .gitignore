@@ -10,3 +10,5 @@ Thumbs.db
 node_modules
 client/dist/*pre*.js
 
+
+\.idea/
