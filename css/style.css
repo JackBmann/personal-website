@@ -1,0 +1,27 @@
+/**
+ * Custom Stylesheet
+ * Overrides Materialize defaults
+ * Written by Jack Baumann
+ */
+/* The carousel has a problem where it loads with a height of 0 if images are cached. */
+/*.carousel-slider {
+   height: 300px !important;
+}*/
+
+/* Code to sticky the footer to the bottom of the window.*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
+.parallax-container {
+  height: 400px;
+}
+
+.icon-block i {
+  font-size: 75px;
+}
