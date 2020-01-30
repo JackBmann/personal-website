@@ -33,13 +33,15 @@
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="index">Home</a></li>
-            <li class="active"><a href="photos">Photos</a></li>
+            <li><a href="photos">Photos</a></li>
             <li><a href="projects">Projects</a></li>
+            <li class="active"><a href="contact">Contact</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li><a href="index">Home</a></li>
-            <li class="active"><a href="photos">Photos</a></li>
+            <li><a href="photos">Photos</a></li>
             <li><a href="projects">Projects</a></li>
+            <li class="active"><a href="contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -47,37 +49,62 @@
 
     <main class="main">
       <div class="container">
-        <h5> Pictures from my travels abroad: </h5>
-        <br>
-        <div class="row">
-          <div class="col s10 offset-s1">
-            <div class="carousel carousel-slider" data-indicators="true" onclick="clearInterval(timerVar)">
-              <a class="carousel-item" href="images/barcelona_placa.jpg" target="_blank"><img src="images/barcelona_placa.jpg"></a>
-              <a class="carousel-item" href="images/assisi_basilica.jpg" target="_blank"><img src="images/assisi_basilica.jpg"></a>
-              <a class="carousel-item" href="images/rome_colosseum.jpg" target="_blank"><img src="images/rome_colosseum.jpg"></a>
-              <a class="carousel-item" href="images/delphi_temple.jpg" target="_blank"><img src="images/delphi_temple.jpg"></a>
-              <a class="carousel-item" href="images/athens_erechtion.jpg" target="_blank"><img src="images/athens_erechtion.jpg"></a>
-              <a class="carousel-item" href="images/nafplion_fortress.jpg" target="_blank"><img src="images/nafplion_fortress.jpg"></a>
-              <a class="carousel-item" href="images/vienna_concert.jpg" target="_blank"><img src="images/vienna_concert.jpg"></a>
-              <a class="carousel-item" href="images/rome_villa_adriana.jpg" target="_blank"><img src="images/rome_villa_adriana.jpg"></a>
-              <a class="carousel-item" href="images/rome_vatican.jpg" target="_blank"><img src="images/rome_vatican.jpg"></a>
-              <a class="carousel-item" href="images/assisi_monastery.jpg" target="_blank"><img src="images/assisi_monastery.jpg"></a>
-              <a class="carousel-item" href="images/florence_duomo.jpg" target="_blank"><img src="images/florence_duomo.jpg"></a>
-              <a class="carousel-item" href="images/salzburg_alps.jpg" target="_blank"><img src="images/salzburg_alps.jpg"></a>
+        <div class="section">
+          <h5>Contact me by filling out the following form: (UNDER CONSTRUCTION)</h5>
+          <br>
+          <!-- Form submission via formmail.php -->
+          <form method="post" action="" name="contactForm">
+            <div class="row">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" name="name" class="validate">
+                  <label for="icon_prefix">Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="icon_telephone" type="tel" name="telephone" class="validate">
+                  <label for="icon_telephone">Telephone # (Optional)</label>
+                </div>
+              </div>
             </div>
-            <!-- Create a timer to transition to the next image every 3 seconds, and stop transitioning if an image is clicked or manually scrolled. -->
-            <script>
-              var timerVar = setInterval(timer, 3000);
-              function timer() {
-                $('.carousel').carousel('next');
-              }
-            </script>
-          </div>
+            <div class="row">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">mail</i>
+                  <input id="email" type="email" name="email" class="validate">
+                  <label for="email" data-error="Invalid Email Address" data-success="Valid Email Address">Email</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <textarea id="icon_prefix2" class="materialize-textarea validate"></textarea>
+                  <label for="icon_prefix2">Message</label>
+                </div>
+              </div>
+            </div>
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>Attatch a File</span>
+                <input type="file" name="files" multiple>
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="Upload one or more files (Optional)">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col s12 m4">
+                <button class="btn-large waves-effect waves-light" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
-        <p> I spent the Spring 2017 semester studying in Rome and traveled to: Milan, Umbria (Perugia, Assisi, Orvieto), Spain (Madrid, Barcelona),
-          United Kingdom (London), Bari, Greece (Delphi, Athens, Corinth, Nafplion, Mycenae, Epidauros, Olympia, Patras), Hungary (Budapest), Austria (Vienna),
-          Czechia (Prague), Germany (Berlin, Munich), Assisi (again), Venice, Florence, Belgium (Brussels), Austria (Vienna, Salzburg), and Germany (Berchtesgaden).
-        </p>
       </div>
     </main>
 
