@@ -5,7 +5,7 @@
  */
 /* The carousel has a problem where it loads with a height of 0 if images are cached. */
 /*.carousel-slider {
-   height: 300px !important;
+   height: 900px !important;
 }*/
 
 /* Code to sticky the footer to the bottom of the window.*/

@@ -46,11 +46,10 @@
     </header>
 
     <main class="main">
-      <div class="container">
-        <h5> Pictures from my travels abroad: </h5>
+      <div class="container center">
         <br>
         <div class="row">
-          <div class="col s10 offset-s1">
+          <div class="col s12">
             <div class="carousel carousel-slider" data-indicators="true" onclick="clearInterval(timerVar)">
               <a class="carousel-item" href="images/barcelona_placa.jpg" target="_blank"><img src="images/barcelona_placa.jpg"></a>
               <a class="carousel-item" href="images/assisi_basilica.jpg" target="_blank"><img src="images/assisi_basilica.jpg"></a>
@@ -67,7 +66,7 @@
             </div>
             <!-- Create a timer to transition to the next image every 3 seconds, and stop transitioning if an image is clicked or manually scrolled. -->
             <script>
-              var timerVar = setInterval(timer, 3000);
+              var timerVar = setInterval(timer, 5000);
               function timer() {
                 $('.carousel').carousel('next');
               }
@@ -109,7 +108,7 @@
       </div>
       <!-- Copyright/Last Updated Container -->
       <div class="footer-copyright">
-        <div class="container"> Last Updated: January 29th, 2020 by Jack Baumann </div>
+        <div class="container"> Last Updated: January 30th, 2020 by Jack Baumann </div>
       </div>
     </footer>
 

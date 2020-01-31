@@ -1,0 +1,54 @@
+/**
+ * Custom Stylesheet
+ * Overrides Materialize defaults
+ * Written by Jack Baumann
+ */
+/*Navbar colors*/
+nav {
+  background-color: #77815c; /*sage*/
+}
+nav .nav-wrapper > ul > li.active {
+  background-color: #ffbd9a; /*peach*/
+}
+nav .nav-wrapper > ul > li.active > a {
+  color: #77815c; /*sage*/
+}
+nav .nav-wrapper > ul > li.inactive {
+
+}
+nav .nav-wrapper > ul > li.inactive > a {
+  color: #ffbd9a; /*peach*/
+}
+nav .nav-wrapper > ul > li:hover {
+  background-color: #ffdecc; /*whiter peach*/
+}
+nav .nav-wrapper > ul > li:hover > a {
+  color: #77815c; /*sage*/
+}
+nav .nav-wrapper > a {
+  color: #47516b; /*navy*/
+}
+nav .nav-wrapper .button-collapse i {
+  color: #ffbd9a; /*peach*/
+}
+
+/*Main body colors*/
+main .invite > a {
+  color: #ffbd9a; /*peach*/
+  background-color: #47516b; /*navy*/
+}
+
+/*Footer colors*/
+.page-footer {
+  background-color: #77815c; /*sage*/
+}
+.page-footer h5 {
+  color: #ffbd9a; /*peach*/
+}
+.page-footer p {
+  color: #ffbd9a; /*peach*/
+}
+.page-footer .footer-copyright {
+  color: #47516b; /*navy*/
+  background-color: #757d60; /*desaturated sage*/
+}
