@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jack Baumann and Sarah Baker's Wedding Website</title>
+    <meta name="keywords" content="Jack, Baumann, Sarah, Baker, Wedding">
+    <meta name="description" content="Jack Baumann and Sarah Baker's Wedding Website">
+    <meta name="application-name" content="Jack Baumann and Sarah Baker's Wedding Website"/>
+    <!-- Favicon courtesy of http://www.favicomatic.com -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/wedding-apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/wedding-apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="images/wedding-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/wedding-favicon-16x16.png" sizes="16x16" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="images/wedding-mstile-144x144.png" />
+    <!-- Import Google Icon Font -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/wedding-style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+
+  <body>
+    <header>
+      <nav role="navigation">
+        <div class="nav-wrapper container">
+          <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li class="inactive"><a href="sarahbaker">Invitation</a></li>
+            <li class="active"><a href="rsvp">RSVP</a></li>
+            <li class="inactive"><a href="details">Details</a></li>
+            <li class="inactive"><a href="accommodations">Accommodations</a></li>
+            <li class="inactive"><a href="weddingphotos">Photos</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-menu">
+            <li class="inactive"><a href="sarahbaker">Invitation</a></li>
+            <li class="active"><a href="rsvp">RSVP</a></li>
+            <li class="inactive"><a href="details">Details</a></li>
+            <li class="inactive"><a href="accommodations">Accommodations</a></li>
+            <li class="inactive"><a href="weddingphotos">Photos</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <br><br>
+      <div class="container">
+        <div class="row">
+          <form id="rsvpForm" class="col s12" method="post">
+            <div class="form-group">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="name" name="name" type="text" autofocus required>
+                <label for="name">Name</label>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">group_add</i>
+                <input id="number" name="number" type="number" value="1" min="1" max="10" required>
+                <label for="number">Number of people in your group (including yourself)</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="message" name="message" class="materialize-textarea validate" data-length="1000" onchange="respondToMessage(this)"></textarea>
+                <label for="message">Enter a message for Sarah and Jack (Optional)</label>
+              </div>
+            </div>
+            <p id="message-response" class="center"></p>
+            <script type="text/javascript">
+              function respondToMessage(input) {
+                const len = document.getElementById('message').value.length;
+                const response = document.getElementById('message-response');
+                if (len == 0) {
+                   response.innerHTML = "";
+                } else if (len > 0 && len <= 1000) {
+                  response.innerHTML = "Thank you for your kind words! :D";
+                } else {
+                  response.innerHTML = "We regretfully inform you that essays are not allowed; this is not your Lit Trad class.  Please shorten your epic down to a short story or poem.";
+                }
+              }
+            </script>
+            <br>
+            <div class="form-group">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">how_to_reg</i>
+                <br>
+                <p>
+                  <input class="with-gap" name="attendance" id="attending" value="attending" type="radio" required/>
+                  <label for="attending"> I/we will make it! </label>
+                </p>
+                <p>
+                  <input class="with-gap" name="attendance" id="notcoming" value="not coming" type="radio" required/>
+                  <label for="notcoming"> I/we will not attend. </label>
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                  <input id="email" name="email" type="email" class="validate">
+                  <label for="email" data-error="Invalid Email" data-success="Valid Email">Email (Optional)</label>
+              </div>
+            </div>
+            <div class="row">
+            </div>
+            <div class="form-group">
+              <div class="row center">
+                <input type="submit" value="RSVP" id="send_rsvp" onclick="checkAttendance()" class="btn">
+                <h4 id="response"></h4>
+              </div>
+            </div>
+            <script type="text/javascript">
+              function checkAttendance() {
+                if (!(document.getElementById('attending').checked) && !(document.getElementById('notcoming').checked)) {
+                  document.getElementById('response').innerHTML = "Please let us know whether you will be attending";
+                } else {}
+              }
+            </script>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5>Website Credits</h5>
+            <p>This website was built with <a href="http://materializecss.com/" target="_blank">Materialize</a>, a front-end framework for Material Design.
+              <a href="https://blog.summercat.com/using-aws-lambda-and-api-gateway-as-html-form-endpoint.html" target="_blank">This article</a> and
+              <a href="https://medium.com/@jbesw/forms-without-servers-handling-form-submissions-with-lambda-4df9ec5fc473" target="_blank">this article</a>
+              were extremely helpful resources for submitting this form with an AWS serverless back-end architecture.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5>We hope to see you there!</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright/Last Updated Container -->
+      <div class="footer-copyright">
+        <div class="container"> Last Updated: February 17th, 2020 by Jack Baumann </div>
+      </div>
+    </footer>
+
+    <!-- Import javascripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="js/materialize.js"></script> -->
+    <script type="text/javascript" src="js/rsvp.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+  </body>
+</html>

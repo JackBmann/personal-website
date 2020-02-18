@@ -3,15 +3,25 @@
  * Overrides Materialize defaults
  * Written by Jack Baumann
  */
+/**
+ * Color palette
+ * #77815c - sage
+ * #757d60 - desaturated sage
+ * #ffbd9a - peach
+ * #ffdecc - whiter peach
+ * #47516b - navy
+ * #31384a - darker navy
+ */
+
 /*Navbar colors*/
 nav {
-  background-color: #77815c; /*sage*/
+  background-color: #47516b; /*navy*/
 }
 nav .nav-wrapper > ul > li.active {
   background-color: #ffbd9a; /*peach*/
 }
 nav .nav-wrapper > ul > li.active > a {
-  color: #77815c; /*sage*/
+  color: #47516b; /*navy*/
 }
 nav .nav-wrapper > ul > li.inactive {
 
@@ -23,7 +33,7 @@ nav .nav-wrapper > ul > li:hover {
   background-color: #ffdecc; /*whiter peach*/
 }
 nav .nav-wrapper > ul > li:hover > a {
-  color: #77815c; /*sage*/
+  color: #47516b; /*navy*/
 }
 nav .nav-wrapper > a {
   color: #47516b; /*navy*/
@@ -32,15 +42,27 @@ nav .nav-wrapper .button-collapse i {
   color: #ffbd9a; /*peach*/
 }
 
-/*Main body colors*/
+/*Button colors*/
 main .invite > a {
   color: #ffbd9a; /*peach*/
   background-color: #47516b; /*navy*/
 }
+main .invite > a:hover {
+  color: #47516b; /*peach*/
+  background-color: #ffbd9a; /*navy*/
+}
+main .rsvp > .send_rsvp {
+  color: #ffbd9a; /*peach*/
+  background-color: #47516b; /*navy*/
+}
+main .rsvp > .send_rsvp:hover {
+  color: #47516b; /*peach*/
+  background-color: #ffbd9a; /*navy*/
+}
 
 /*Footer colors*/
 .page-footer {
-  background-color: #77815c; /*sage*/
+  background-color: #47516b; /*navy*/
 }
 .page-footer h5 {
   color: #ffbd9a; /*peach*/
@@ -50,5 +72,48 @@ main .invite > a {
 }
 .page-footer .footer-copyright {
   color: #47516b; /*navy*/
-  background-color: #757d60; /*desaturated sage*/
+  background-color: #31384a; /*darker navy*/
+}
+
+
+/* Form colors */
+/* label color */
+.input-field label {
+    color: #47516b; /*navy*/
+}
+/* label focus color */
+.input-field input[type]:focus + label {
+    color: #77815c; /*sage*/
+}
+/* label underline focus color */
+.input-field input[type]:focus {
+    border-bottom: 1px solid #77815c; /*sage*/
+    box-shadow: 0 1px 0 0 #77815c; /*sage*/
+}
+/* valid color */
+.input-field input[type=email].valid, .input-field input[type=email].valid {
+    border-bottom: 1px solid green;
+    box-shadow: 0 1px 0 0 green;
+}
+/* invalid color */
+.input-field input[type=email].invalid, .input-field input[type=email].invalid {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #77815c; /*sage*/
+}
+
+.input-field textarea:focus + label.active {
+    color: #77815c; /*sage*/
+}
+
+/* radio button colors */
+.with-gap[type="radio"]:checked+label:after {
+    background-color: green;
+    border-color: green;
+}
+.with-gap[type="radio"]:checked+label:before {
+    border-color: green;
 }
