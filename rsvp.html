@@ -24,6 +24,12 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/wedding-style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- Import javascripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="js/materialize.js"></script> -->
+    <script type="text/javascript" src="js/rsvp.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
   </head>
 
   <body>
@@ -64,8 +70,8 @@
             <div class="form-group row">
               <div class="input-field col s6">
                 <i class="material-icons prefix">group_add</i>
-                <input id="number" name="number" type="number" value="1" min="1" max="10" required>
-                <label for="number">Number of people in your group (including yourself)</label>
+                <input id="number" name="number" type="number" value="1" min="0" max="10" required>
+                <label for="number">Number of people listed on your invitation attending (including yourself)</label>
               </div>
             </div>
             <div class="form-group">
@@ -92,30 +98,43 @@
             <br>
             <div class="form-group">
               <div class="input-field col s6">
-                <i class="material-icons prefix">how_to_reg</i>
-                <br>
                 <p>
-                  <input class="with-gap" name="attendance" id="attending" value="attending" type="radio" required/>
+                  <i class="material-icons prefix">person_add</i>
+                  <input class="with-gap" name="attendance" id="attending" value="attending" type="radio" required>
                   <label for="attending"> I/we will make it! </label>
                 </p>
                 <p>
-                  <input class="with-gap" name="attendance" id="notcoming" value="not coming" type="radio" required/>
+                  <i class="material-icons prefix">person_add_disabled</i>
+                  <input class="with-gap" name="attendance" id="notcoming" value="not coming" type="radio" required>
                   <label for="notcoming"> I/we will not attend. </label>
                 </p>
               </div>
             </div>
             <div class="form-group">
               <div class="input-field col s6">
+                <i class="material-icons prefix">restaurant</i>
+                <input id="diet" name="diet" type="text" list="dietary-restrictions"/>
+                <datalist id="dietary-restrictions">
+                  <option>Vegetarian</option>
+                  <option>Gluten Free</option>
+                  <option>Dairy Free</option>
+                  <option>Vegan</option>
+                </datalist>
+                <label for="diet">Enter any dietary restrictions in your party</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-field col s6">
                 <i class="material-icons prefix">email</i>
-                  <input id="email" name="email" type="email" class="validate">
-                  <label for="email" data-error="Invalid Email" data-success="Valid Email">Email (Optional)</label>
+                <input id="email" name="email" type="email" class="validate">
+                <label for="email" data-error="Invalid Email" data-success="Valid Email">Email (Optional)</label>
               </div>
             </div>
             <div class="row">
             </div>
             <div class="form-group">
               <div class="row center">
-                <input type="submit" value="RSVP" id="send_rsvp" onclick="checkAttendance()" class="btn">
+                <input type="submit" value="RSVP" onclick="checkAttendance()" class="btn-large rsvp">
                 <h4 id="response"></h4>
               </div>
             </div>
@@ -149,15 +168,8 @@
       </div>
       <!-- Copyright/Last Updated Container -->
       <div class="footer-copyright">
-        <div class="container"> Last Updated: February 17th, 2020 by Jack Baumann </div>
+        <div class="container"> Last Updated: February 26th, 2020 by Jack Baumann </div>
       </div>
     </footer>
-
-    <!-- Import javascripts -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <!-- <script type="text/javascript" src="js/materialize.js"></script> -->
-    <script type="text/javascript" src="js/rsvp.js"></script>
-    <script type="text/javascript" src="js/javascript.js"></script>
   </body>
 </html>

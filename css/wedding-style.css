@@ -43,19 +43,19 @@ nav .nav-wrapper .button-collapse i {
 }
 
 /*Button colors*/
-main .invite > a {
+.rsvp > a {
   color: #ffbd9a; /*peach*/
   background-color: #47516b; /*navy*/
 }
-main .invite > a:hover {
+.rsvp > a:hover {
   color: #47516b; /*peach*/
   background-color: #ffbd9a; /*navy*/
 }
-main .rsvp > .send_rsvp {
+.rsvp {
   color: #ffbd9a; /*peach*/
   background-color: #47516b; /*navy*/
 }
-main .rsvp > .send_rsvp:hover {
+.rsvp:hover {
   color: #47516b; /*peach*/
   background-color: #ffbd9a; /*navy*/
 }
@@ -76,44 +76,88 @@ main .rsvp > .send_rsvp:hover {
 }
 
 
-/* Form colors */
-/* label color */
-.input-field label {
-    color: #47516b; /*navy*/
-}
-/* label focus color */
-.input-field input[type]:focus + label {
-    color: #77815c; /*sage*/
-}
-/* label underline focus color */
-.input-field input[type]:focus {
-    border-bottom: 1px solid #77815c; /*sage*/
-    box-shadow: 0 1px 0 0 #77815c; /*sage*/
-}
-/* valid color */
-.input-field input[type=email].valid, .input-field input[type=email].valid {
-    border-bottom: 1px solid green;
-    box-shadow: 0 1px 0 0 green;
-}
-/* invalid color */
-.input-field input[type=email].invalid, .input-field input[type=email].invalid {
-    border-bottom: 1px solid red;
-    box-shadow: 0 1px 0 0 red;
-}
-/* icon prefix focus color */
-.input-field .prefix.active {
-    color: #77815c; /*sage*/
+/* Form colors courtesy of https://stackoverflow.com/a/56501028 */
+/* Inactive/Active Default input field color */
+.input-field input[type]:not([readonly]),
+.input-field input[type]:focus:not([readonly]),
+.input-field textarea:not([readonly]),
+.input-field textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #77815c; /*sage*/
+  box-shadow: 0 1px 0 0 #77815c; /*sage*/
 }
 
-.input-field textarea:focus + label.active {
-    color: #77815c; /*sage*/
+/* Inactive/Active Default input label color */
+.input-field input[type]:focus:not([readonly])+label,
+.input-field textarea:focus:not([readonly])+label {
+  color: #77815c; /*sage*/
+}
+
+/* Active/Inactive Valid input field color */
+.input-field input[type].valid,
+.input-field input[type].valid:focus,
+.input-field textarea.valid,
+.input-field textarea.valid:focus {
+  border-bottom: 1px solid #77815c; /*sage*/
+  box-shadow: 0 1px 0 0 #77815c; /*sage*/
+}
+
+/* Active/Inactive Valid input label color */
+.input-field input[type].valid:focus+label,
+.input-field input[type].valid~.helper-text::after,
+.input-field input[type].valid:focus~.helper-text::after,
+.input-field textarea.valid:focus+label,
+.input-field textarea.valid~.helper-text::after,
+.input-field textarea.valid:focus~.helper-text::after {
+  color: #77815c; /*sage*/
+}
+
+/* Active/Inactive Invalid input field colors */
+.input-field input[type].invalid,
+.input-field input[type].invalid:focus,
+.input-field textarea.invalid,
+.input-field textarea.invalid:focus {
+  border-bottom: 1px solid red;
+  box-shadow: 0 1px 0 0 red;
+}
+
+/* Active/Inactive Invalid input label color */
+.input-field input[type].invalid:focus+label,
+.input-field input[type].invalid~.helper-text::after,
+.input-field input[type].invalid:focus~.helper-text::after,
+.input-field textarea.invalid:focus+label,
+.input-field textarea.invalid~.helper-text::after,
+.input-field textarea.invalid:focus~.helper-text::after {
+  color: red;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #77815c; /*sage*/
+}
+/* form icon prefix hover color, !important to override focus color */
+.form-group .material-icons:hover {
+  color: #ffbd9a !important; /*peach*/
+}
+/* icon prefix center w/ line */
+.material-icons {
+  line-height: inherit;
 }
 
 /* radio button colors */
 .with-gap[type="radio"]:checked+label:after {
-    background-color: green;
-    border-color: green;
+  background-color: #77815c; /*sage*/
+  border-color: #77815c; /*sage*/
 }
 .with-gap[type="radio"]:checked+label:before {
-    border-color: green;
+  border-color: #77815c; /*sage*/
+}
+
+.title-text {
+  margin-bottom: 0;
+}
+.no-margin-bottom {
+  margin: 0;
+}
+#rewind, #forward {
+  color: #77815c; /*sage*/
 }

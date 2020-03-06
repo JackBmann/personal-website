@@ -23,6 +23,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- Import javascripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="js/materialize.js"></script> -->
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script type="text/javascript" async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script type="text/javascript" async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
   <body>
@@ -50,27 +57,20 @@
         <br>
         <div class="row">
           <div class="col s12">
-            <div class="carousel carousel-slider" data-indicators="true" onclick="clearInterval(timerVar)">
-              <a class="carousel-item" href="images/barcelona_placa.jpg" target="_blank"><img src="images/barcelona_placa.jpg"></a>
-              <a class="carousel-item" href="images/assisi_basilica.jpg" target="_blank"><img src="images/assisi_basilica.jpg"></a>
-              <a class="carousel-item" href="images/rome_colosseum.jpg" target="_blank"><img src="images/rome_colosseum.jpg"></a>
-              <a class="carousel-item" href="images/delphi_temple.jpg" target="_blank"><img src="images/delphi_temple.jpg"></a>
-              <a class="carousel-item" href="images/athens_erechtion.jpg" target="_blank"><img src="images/athens_erechtion.jpg"></a>
-              <a class="carousel-item" href="images/nafplion_fortress.jpg" target="_blank"><img src="images/nafplion_fortress.jpg"></a>
-              <a class="carousel-item" href="images/vienna_concert.jpg" target="_blank"><img src="images/vienna_concert.jpg"></a>
-              <a class="carousel-item" href="images/rome_villa_adriana.jpg" target="_blank"><img src="images/rome_villa_adriana.jpg"></a>
-              <a class="carousel-item" href="images/rome_vatican.jpg" target="_blank"><img src="images/rome_vatican.jpg"></a>
-              <a class="carousel-item" href="images/assisi_monastery.jpg" target="_blank"><img src="images/assisi_monastery.jpg"></a>
-              <a class="carousel-item" href="images/florence_duomo.jpg" target="_blank"><img src="images/florence_duomo.jpg"></a>
-              <a class="carousel-item" href="images/salzburg_alps.jpg" target="_blank"><img src="images/salzburg_alps.jpg"></a>
+            <div class="carousel carousel-slider" id="rome-photos" data-indicators="true" onclick="clearInterval(romePhotosTimer)">
+              <a class="carousel-item" href="images/Rome/barcelona_placa.jpg" target="_blank"><img src="images/Rome/barcelona_placa.jpg"></a>
+              <a class="carousel-item" href="images/Rome/assisi_basilica.jpg" target="_blank"><img src="images/Rome/assisi_basilica.jpg"></a>
+              <a class="carousel-item" href="images/Rome/rome_colosseum.jpg" target="_blank"><img src="images/Rome/rome_colosseum.jpg"></a>
+              <a class="carousel-item" href="images/Rome/delphi_temple.jpg" target="_blank"><img src="images/Rome/delphi_temple.jpg"></a>
+              <a class="carousel-item" href="images/Rome/athens_erechtion.jpg" target="_blank"><img src="images/Rome/athens_erechtion.jpg"></a>
+              <a class="carousel-item" href="images/Rome/nafplion_fortress.jpg" target="_blank"><img src="images/Rome/nafplion_fortress.jpg"></a>
+              <a class="carousel-item" href="images/Rome/vienna_concert.jpg" target="_blank"><img src="images/Rome/vienna_concert.jpg"></a>
+              <a class="carousel-item" href="images/Rome/rome_villa_adriana.jpg" target="_blank"><img src="images/Rome/rome_villa_adriana.jpg"></a>
+              <a class="carousel-item" href="images/Rome/rome_vatican.jpg" target="_blank"><img src="images/Rome/rome_vatican.jpg"></a>
+              <a class="carousel-item" href="images/Rome/assisi_monastery.jpg" target="_blank"><img src="images/Rome/assisi_monastery.jpg"></a>
+              <a class="carousel-item" href="images/Rome/florence_duomo.jpg" target="_blank"><img src="images/Rome/florence_duomo.jpg"></a>
+              <a class="carousel-item" href="images/Rome/salzburg_alps.jpg" target="_blank"><img src="images/Rome/salzburg_alps.jpg"></a>
             </div>
-            <!-- Create a timer to transition to the next image every 3 seconds, and stop transitioning if an image is clicked or manually scrolled. -->
-            <script>
-              var timerVar = setInterval(timer, 5000);
-              function timer() {
-                $('.carousel').carousel('next');
-              }
-            </script>
           </div>
         </div>
         <p> I spent the Spring 2017 semester studying in Rome and traveled to: Milan, Umbria (Perugia, Assisi, Orvieto), Spain (Madrid, Barcelona),
@@ -111,13 +111,5 @@
         <div class="container"> Last Updated: January 30th, 2020 by Jack Baumann </div>
       </div>
     </footer>
-
-    <!-- Import javascripts -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <!-- <script type="text/javascript" src="js/materialize.js"></script> -->
-    <script type="text/javascript" src="js/javascript.js"></script>
-    <script type="text/javascript" async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script type="text/javascript" async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>

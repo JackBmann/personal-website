@@ -5,7 +5,11 @@
  */
 /* The carousel has a problem where it loads with a height of 0 if images are cached. */
 .carousel-slider {
-   height: 95vh !important;
+  height: 95vh;
+}
+.carousel-slider img {
+  height: 95vh;
+  object-fit: contain; /* this will fill the view window without losing aspect ratio.*/
 }
 
 /* Code to sticky the footer to the bottom of the window.*/
@@ -24,4 +28,27 @@ main {
 
 .icon-block i {
   font-size: 75px;
+}
+
+/* Center nav buttons in left and right margins */
+/* https://www.sitepoint.com/atoz-css-quick-tip-vertical/ */
+.carousel-with-nav-buttons {
+  position: relative;
+  width: 100vw;
+}
+.carousel-with-nav-buttons img {
+  object-fit: contain;
+  height: 100%;
+}
+.carousel-with-nav-buttons #rewind {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.carousel-with-nav-buttons #forward {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
 }
