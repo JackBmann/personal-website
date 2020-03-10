@@ -76,7 +76,7 @@
             <div class="form-group">
               <div class="input-field col s12">
                 <i class="material-icons prefix">mode_edit</i>
-                <textarea id="message" name="message" class="materialize-textarea validate" data-length="1000" onchange="respondToMessage(this)"></textarea>
+                <textarea id="message" name="message" class="materialize-textarea validate" data-length="5000" onchange="respondToMessage(this)"></textarea>
                 <label for="message">Enter a message for Sarah and Jack (Optional)</label>
               </div>
             </div>
@@ -87,7 +87,7 @@
                 const response = document.getElementById('message-response');
                 if (len == 0) {
                    response.innerHTML = "";
-                } else if (len > 0 && len <= 1000) {
+                } else if (len > 0 && len <= 5000) {
                   response.innerHTML = "Thank you for your kind words! :D";
                 } else {
                   response.innerHTML = "We regretfully inform you that essays are not allowed; this is not your Lit Trad class.  Please shorten your epic down to a short story or poem.";
@@ -129,6 +129,25 @@
                 <label for="email" data-error="Invalid Email" data-success="Valid Email">Email (Optional)</label>
               </div>
             </div>
+            <div class="form-group">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">cake</i>
+                <textarea id="recipe" name="recipe" class="materialize-textarea validate" data-length="5000" onchange="respondToRecipe(this)"></textarea>
+                <label for="recipe">In lieu of a gift, we would prefer if you shared your favorite recipe with us! (Optional)</label>
+              </div>
+            </div>
+            <p id="recipe-response" class="center"></p>
+            <script type="text/javascript">
+              function respondToRecipe(input) {
+                const len = document.getElementById('recipe').value.length;
+                const response = document.getElementById('recipe-response');
+                if (len == 0) {
+                   response.innerHTML = "";
+                } else if (len > 0) {
+                  response.innerHTML = "Thank you for sharing!  One of our favorite things to do is cook together.  We will give your recipe a try and think of you while we're making it!";
+                }
+              }
+            </script>
             <div class="row">
             </div>
             <div class="form-group">
@@ -169,7 +188,7 @@
       </div>
       <!-- Copyright/Last Updated Container -->
       <div class="footer-copyright">
-        <div class="container"> Last Updated: February 26th, 2020 by Jack Baumann </div>
+        <div class="container"> Last Updated: March 9th, 2020 by Jack Baumann </div>
       </div>
     </footer>
   </body>
