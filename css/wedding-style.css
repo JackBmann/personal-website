@@ -13,6 +13,21 @@
  * #31384a - darker navy
  */
 
+ .livestream {
+   margin-left: 0px;
+ }
+
+ .livestream > iframe {
+   height: 90vh;
+   width: 90vw;
+   padding-left: 10vw;
+ }
+
+ .invite > img {
+   width: 80vw;
+   max-width: 656px;
+ }
+
 /*Navbar colors*/
 nav {
   background-color: #47516b; /*navy*/
