@@ -23,11 +23,24 @@ main {
 }
 
 .parallax-container {
-  height: 400px;
+  height: 25rem;
 }
 
 .icon-block i {
   font-size: 75px;
+}
+
+.card-container {
+  column-gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30rem;
 }
 
 /* Center nav buttons in left and right margins */

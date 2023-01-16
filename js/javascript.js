@@ -39,6 +39,10 @@ var favPhotosTimer = setInterval(favTimer, 5000);
 function favTimer() {
   $('#fav-photos').carousel('next');
 }
+var gusPhotosTimer = setInterval(gusTimer, 5000);
+function gusTimer() {
+  $('#lycurgus-photos').carousel('next');
+}
 
 $(document).ready(function(){
   $(".button-collapse").sideNav();
@@ -47,10 +51,11 @@ $(document).ready(function(){
   $(document).ready(function(){
     $('.modal').modal();
   });
-  
+
   //Carousel initiation and timer
   $('#rome-photos').carousel({fullWidth: true});
   $('#engagement-photos').carousel({fullWidth: true, indicators:true});
+  $('#lycurgus-photos').carousel({fullWidth: true});
   // Create a timer to transition to the next image every 5 seconds.
   // var timerVar = setInterval(timer, 5000);
   // function timer() {
