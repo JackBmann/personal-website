@@ -54,7 +54,171 @@
       <div class="card-container">
         <div class="card large sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/projects/texas_historical_markers_map_screenshot3.png">
+            <img class="activator" src="https://buff.163.com/app/images/web-slogan.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Buff Bot<i class="material-icons right">more_vert</i></span>
+            <p>A Python CLI and web scraper to look up the value of CS:GO items.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/JackBmann/buff163_bot" target="_blank">View repository on GitHub</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Buff Bot<i class="material-icons right">close</i></span>
+            <p>I forked a basic Python web scraper which grabbed item values from Buff.163.com and the Steam Community Market, the largest marketplaces
+              for Counter-Strike items, and upgraded it to suit my needs.</p>
+            <p>The bot supports all of the available Buff API calls and has a few different functionalites, including scraping individual item data,
+              a whole inventory, or the entire market.</p>
+            <p>I imported the data from the bot into a spreadsheet for further processing, which was immensely helpful when selling my inventory.</p>
+            <br>
+          </div>
+        </div>
+        <div class="card large sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/invitation.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Wedding Website<i class="material-icons right">more_vert</i></span>
+            <p>Our wedding website, where guests could RSVP, see our engagement photos, and watch the livestream.</p>
+          </div>
+          <div class="card-action">
+            <a href="http://jackbaumann.us/sarahbaker" target="_blank">See the website</a>
+            <a href="https://github.com/JackBmann/personal-website" target="_blank">See the code on GitHub</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Wedding Website<i class="material-icons right">close</i></span>
+            <p>I built our wedding website to collect RSVPs from our guests, host our engagement photos, and provide details about the festivities and accomodations.</p>
+            <p>We unforutunately had to cancel our wedding reception due to the COVID-19 pandemic, so the website ended up coming in handy as a place to put a livestream.</p>
+            <p>The serverless back-end for the website is managed with Amazon Web Services and consists of a public S3 bucket to host the webpages, Route53 to route users to them, 
+              an API Gateway endpoint to POST the HTTP request to, a Lambda function to parse the RSVPs, a DynamoDB NoSQL database to store the data, 
+              and an SES service to email me when someone responds.</p>
+            <p><a href="https://blog.summercat.com/using-aws-lambda-and-api-gateway-as-html-form-endpoint.html" target="_blank">This article</a> and
+              <a href="https://medium.com/@jbesw/forms-without-servers-handling-form-submissions-with-lambda-4df9ec5fc473" target="_blank">this article</a>
+              were extremely helpful resources for setting up the AWS architecture.</p>
+            <br>
+          </div>
+        </div>
+        <div class="card large sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/projects/nav_research.PNG">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Navigation Algorithm Reserach<i class="material-icons right">more_vert</i></span>
+            <p>Improving path-finding algorithms to account for traffic variance.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/JackBmann/nav_research" target="_blank">View code and pathfinding examples on GitHub</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Navigation Algorithm Reserach<i class="material-icons right">close</i></span>
+            <p>I did this research with Michael Bolot and Dr. David Andrews at the University of Dallas in Irving, TX from August 2018 - May 2019.
+            <p>The goal of this research project was to improve existing path-finding technologies by implementing newer path-finding algorithms
+              (particularly A*) and improving them to account for finer details such as the variance in traffic within different lanes on a road.</p>
+            <p>The idea derrived from traffic spawed by an annoying construction zone that GoogleMaps kept trying to route Dr. Andrews away from on his way to work.
+              Except, with a bit of a tweek to a pathing algorithm we could determine that if he took the left lane, rather than the backed-up right lane he could
+              arrive at work faster.  Traffic data spliced to individual lanes is theoretically plausible if you analyze the route each car is taking to determine
+              which turns they make, and we showed that it can make meaningful differences in certain situations.</p>
+            <p>The map data is sourced from <a href="https://www.openstreetmap.org" target="_blank">OpenStreetMaps</a> (an open-data portal for maps).
+              We used <a href="https://qgis.org/en/site/" target="_blank">QGIS</a> (a free and open-source GIS tool) to extract, view, and manipulate the GIS data.</p>
+            <p>Our Python 3 environment was managed by Anaconda and included GDAL, plotly, and networkx dependencies.  Plotly was a neat tool that allowed us to
+              create and analyze visualizations of our pathing algorithms.</p>
+            <br>
+          </div>
+        </div>
+        <div class="card large sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">HackDFW 2019: Take Me Home<i class="material-icons right">more_vert</i></span>
+            <p>A Python/Django app to find lost loved ones from a description or photo.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/glorioushedgehog/TakeMeHomeLegacy" target="_blank">See the project on GitHub</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">HackDFW 2019: Take Me Home<i class="material-icons right">close</i></span>
+            <p>I attended HackDFW 2019 with a group of 4 friends from my Computer Science program (Paul, Michael, Yeabkal, and Peter).
+              Together we upgraded the searching functionality of Take Me Home, an application Paul had built at a prior time to help
+              medical facilites and loved ones find missing persons with mental disabilities.</p>
+            <p>The app lets an organization build up a database of people including their personal information, physical descriptors, emergency contacts, and images.</p>
+            <p>Once the database is established it can be searched given a query.  The app also supports facial recognition to match a photo to a person using machine learning.</p>
+            <p>The app was at one time in use by a medical facility that regularly recieved calls regarding unknown persons in need of help.
+              The facility would identify their patients from a physical description to figure out what resources they needed prior to responding to the situation.</p>
+            <br>
+          </div>
+        </div>
+        <div class="card large sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/projects/UDBookSharing.PNG">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">UD ACM Spring 2019 Hackathon: Book Sharing<i class="material-icons right">more_vert</i></span>
+            <p>An app to help our classmates sell, lease, and borrow books for their classes.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/UDComputerClub/IOSBookSharing" target="_blank">View Book Sharing App on GitHub</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">UD ACM Spring 2019 Hackathon: Book Sharing<i class="material-icons right">close</i></span>
+            <p>Our University ACM Chapter organized a weekend hackathon to create an app for our classmates to use for exchanging books.
+              Being a Liberal Arts school, students had many books to trade and this was generally done using a FaceBook group, which was a hassle.
+              Our app allowed students to list their own books, search for books by title/class/professor, and see recent listings.</p>
+            <p>We designed the backend & database together and then split into groups to work on different frontends.
+              A friend and I developed the iOS app using Swift while our classmates worked on the Android and Web apps.</p>
+            <br>
+          </div>
+        </div>
+        <div class="card large sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://raw.githubusercontent.com/JackBmann/cast-source/master/images/Title2.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Software Engineering Capstone: CastSource<i class="material-icons right">more_vert</i></span>
+            <p>A webapp to match stage actors looking for opportunities to perform with directors who are putting together shows.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/JackBmann/cast-source" target="_blank">View the Project on GitHub</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Software Engineering Capstone: CastSource<i class="material-icons right">close</i></span>
+            <p>Created with two other classmates, Michael and Anthony (a Drama major), this was our capstone project for our Software Engineering class in Spring 2019</p>
+            <p>This project gave us hands on experience with how modern dynamic webapps were designed.</p>
+            <p>Our Network Topology included a public facing server (EC2) using Apache httpd. This server delivered webpages over SSL (whose certificate was supplied by Let's Encrypt).
+              Suporting the server for storage purposes was an S3 bucket (which was desinged to store files, namely the actor's resumes and headshots) and a database.
+              The MySQL database stored both profile information (under the table Users) and authentication (cookie) data.
+              The server and storage methods were on an Amazon VPC (meaning the database could only be accessed from the server and the same for the S3 bucket).</p>
+            <p>The scripts for the server were cgi scripts run through Python. These scripts handled loging in, database access, and parsing HTML to allow for dynamic changes to the page.
+              The frontend used HTML and CSS (through Materialize).</p>
+            <br>
+          </div>
+        </div>
+        <div class="card large sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="http://mmt.cs.ecsu.edu/nia_photo_library/1819/181111sc/slides/sc_20181115_23.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">HackHPC @ SC18: Buy Low, Sell HPC<i class="material-icons right">more_vert</i></span>
+            <p>Playing around with High Performacnce / Cloud Computing tools at the 2018 Supercomputing Conference</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/JackBmann/HackHPC" target="_blank">View the Project and Presentation on GitHub</a>
+            <a href="http://hackhpc.org/pasthacks/#sc18" target="_blank">View the HackHPC Website</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">HackHPC @ SC18: Buy Low, Sell HPC<i class="material-icons right">close</i></span>
+            <p>My classmates and I got the opportunity to attend SC18 and had a great time roaming the exhibitions and seeing the technology displayed at the conference.
+              While we were there we attended a Hackathon to get some hands on experience using new cloud computing tools.</p>
+            <p>To get our feet wet we tried to do something basic, but that could also be enhanced with some basic cloud computing knowledge.
+              We graphed a rolling Amazon review score for products of specific companies (like Lenovo) with stock market data for those companies
+              to see if there was any relation.</p>
+            <p><a href="http://hackhpc.org/" target="_blank">HackHPC</a> took place in conjunction with <a href="https://sc18.supercomputing.org/" target="_blank">SC18</a> on November 13th-14th, 2018.</p>
+            <br>
+          </div>
+        </div>
+        <div class="card large sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://raw.githubusercontent.com/JackBmann/mobile-apps/master/TexasHistoricalMarkersFinalProject/Screenshots/texas_historical_markers_map_screenshot3.png">
             <!--<span class="card-title">Texas Historical Markers Map</span>-->
           </div>
           <div class="card-content">
@@ -62,20 +226,20 @@
             <p>View Texas Historical Markers on a map, tap on a pin for details, and navigate to a marker via GoogleMaps.</p>
           </div>
           <div class="card-action">
-            <a href="https://github.com/JackBmann/mobile-apps/tree/master/TexasHistoricalMarkersFinalProject" target="_blank">View Texas Historical Markers Map on GitHub</a>
+            <a href="https://github.com/JackBmann/mobile-apps/tree/master/TexasHistoricalMarkersFinalProject" target="_blank">View Texas Historical Markers App on GitHub</a>
+            <a href="https://www.google.com/maps/d/edit?mid=1qSkLmR1XNKncuQdfZkB06giW3oqTnLMK" target="_blank">View Texas Historical Markers Map on Google Maps</a>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Mobile Apps Fall 2017: Texas Historical Markers Map<i class="material-icons right">close</i></span>
             <p>I created an iOS app using Swift which used Google Maps to display pins at the locations of Texas Historical Markers.
-              The View Controller displayed detailed information about each Historical Marker and opened Google Maps to navigate to its coordinates.
-            </p>
+              The View Controller displayed detailed information about each Historical Marker and opened Google Maps to navigate to its coordinates.</p>
             <p>This app was my final project in a Mobile Apps class I took during the Fall semester of 2017.</p>
             <br>
           </div>
         </div>
         <div class="card large sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/projects/comp_phys_final_project.png">
+            <img class="activator" src="https://raw.githubusercontent.com/JackBmann/computational-physics/master/Final%20Project/comp_phys_final_project_screenshot.png">
             <!--<span class="card-title">Stock Market Projection Using Chaos Theory</span>-->
           </div>
           <div class="card-content">
@@ -89,15 +253,14 @@
             <span class="card-title grey-text text-darken-4">Computational Physics Fall 2016: Stock Market Projection Using Chaos Theory<i class="material-icons right">close</i></span>
             <p>I created a Python script that read historical data for stocks from .csv files and used the Hurst Exponent, Lyapunov Exponent,
               and a predictability value to project the patterns of the stock prices in the future.  I used MatPlotLib to plot the data and
-              gave a presentation on my project using sample data from frequently traded stocks.
-            </p>
+              gave a presentation on my project using sample data from frequently traded stocks.</p>
             <p>This app was my final project in a Computational Physics class I took during the Fall semester of 2016.</p>
             <br>
           </div>
         </div>
         <div class="card large sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/projects/evolveyoself-logo.png">
+            <img class="activator" src="https://raw.githubusercontent.com/UDComputerClub/LaborDayWebApp/master/public/images/evolve%20yoself.png">
             <!--<span class="card-title">Evolve Yo'self</span>-->
           </div>
           <div class="card-content">
@@ -113,18 +276,16 @@
             <span class="card-title grey-text text-darken-4">Labor Day 2016 UD ACM Hackathon: Evolve Yo'self<i class="material-icons right">close</i></span>
             <p>A simple web app that allows the user to upload two photos, give each of them a name, and then animate the "evolution" of the first photo into
               second, in the same manner as the first generation Pokémon games.  The website allows the user to download their animation for safe keeping or sharing.
-              The plan was to add animations in the style of later games and to implement advertising, but neither was completed.
-            </p>
+              The plan was to add animations in the style of later games and to implement advertising, but neither was completed.</p>
             <p>The webapp used HTML and CSS for the web interface, javascript to animate the evolution, and Node.js to handle the file uploading and downloading.</p>
             <p>A webapp my fellow UD Computer Science majors and I put together over Labor Day weekend 2016 for the purpose of raising money for UD's Association
-              for Computing Machinery chapter.  I was involved in the brainstorming, organizing the event, and putting the finishing touches on the website.
-            </p>
+              for Computing Machinery chapter.  I was involved in the brainstorming, organizing the event, and putting the finishing touches on the website.</p>
             <br>
           </div>
         </div>
         <div class="card large sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/projects/stocktalk-demo.png">
+            <img class="activator" src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/000/334/156/datas/original.png">
             <!--<span class="card-title">StockTalk</span>-->
           </div>
           <div class="card-content">
@@ -140,13 +301,30 @@
             <span class="card-title grey-text text-darken-4">HackRice 2016: StockTalk: The (not so) Ideal Stock Market<i class="material-icons right">close</i></span>
             <p>A multi-player investment game in which the stock prices of three tech giants (Google, Microsoft, and Facebook) are controlled by the positive and
               negative tweets each company receives. For each positive tweet the price of the stock rises, and for each negative tweet, it falls. The stock prices
-              are controlled traditionally by supply and demand too, so the more people buy stock of one company, the higher that company's stock price rises.
-            </p>
+              are controlled traditionally by supply and demand too, so the more people buy stock of one company, the higher that company's stock price rises.</p>
             <p>The webapp used python to scrape and analyze tweets, javascript to control the game, and HTML and CSS for the web user interface.</p>
             <p>A friend, two colleagues, and I built StockTalk in less than 24 hours at HackRice 2016. I worked primarily with the front end web interface and did
-              a lot of research on how each part of the project would fit together.
-            </p>
+              a lot of research on how each part of the project would fit together.</p>
             <p>StockTalk won the PROS sponsor award for best finance-related game.</p>
+            <br>
+          </div>
+        </div>
+        <div class="card large sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://raw.githubusercontent.com/patrickedelen/safeword/master/chromeExtension/images/icon128.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">HackDFW 2016: Safe Word<i class="material-icons right">more_vert</i></span>
+            <p>A Chrome Extension to protect your passwords and alert you of security flaws.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/patrickedelen/safeword" target="_blank">View Safe Word on GitHub</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">HackDFW 2016: Safe Word<i class="material-icons right">close</i></span>
+            <p>Safe Word is a Google Chrome extension meant to keep passwords safe online.  It monitors the websites a user visits to
+              alert them of security flaws and catalogs insecure websites in a database with their violations.</p>
+            <p>I built Safe Word at HackDFW 2016 with 4 friends using Node.js, MongoDB, AngularJS, and HTML/CSS.</p>
             <br>
           </div>
         </div>
@@ -172,14 +350,31 @@
             <p>The project used Node.js, Angular.js, HTML, CSS, Bootstrap for the front end web design.  The backend was created with Java and SQL.  We also used Mandrill to send emails.</p>
             <p>I traveled to Delaware one weekend in October of 2015 to participate in a hackathon for charity.  Chase sponsored students to build a piece of software
               for a local charity, in this case either Goodwill or The Children's Aid Society.  My team of four other students chose to build a webapp for The Children's
-              Aid Society.  I primarily worked on the front end of the webapp, mostly the web design using Bootstrap.
-            </p>
+              Aid Society.  I primarily worked on the front end of the webapp, mostly the web design using Bootstrap.</p>
             <br>
           </div>
         </div>
         <div class="card large sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/projects/houalert-android-trimmed.png">
+            <img class="activator" src="https://img.icons8.com/material-outlined/256/alarm-clock--v1.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">HackTX 2015: Volume Control<i class="material-icons right">more_vert</i></span>
+            <p>An Android app to provide better control of your phone's audio.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/jhillkwaj/VolumeControl" target="_blank">View the project on GitHub</a>
+          </div>
+          <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">HackTX 2015: Volume Control<i class="material-icons right">close</i></span>
+            <p>A friend and I were moderately annoyed with how Android handled audio sources and volume control at the time.  So, we put together an app at 
+              HackTX, which is hosted at the University of Texas at Austin, to address some of our frustrations.</p>
+            <br>
+          </div>
+        </div>
+        <div class="card large sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/000/263/176/datas/original.png">
             <!--<span class="card-title">HOUAlert</span>-->
           </div>
           <div class="card-content">
@@ -196,23 +391,20 @@
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">3rd Annual Houston Civic Hackathon (2015): HOUAlert<i class="material-icons right">close</i></span>
             <p>HOUAlert is a system that conglomerates all current emergency, weather, and public works data into a seamless and easy to use interface. Using the ESRI
-              mapping system, we layered 311, police, fire, weather, and hurricane data, resulting in one map that accomplishes what previously took four.
-            </p>
+              mapping system, we layered 311, police, fire, weather, and hurricane data, resulting in one map that accomplishes what previously took four.</p>
             <p>Both the webapp and the Android app used ESRI ArcGIS to map the relevant data.  We acquired the data, such as active 311 reports and HPD or HFD incidents,
-              through HTML scrapers and city databases.  The webapp was built with HTML, CSS, and javascript.
-            </p>
+              through HTML scrapers and city databases.  The webapp was built with HTML, CSS, and javascript.</p>
             <p>Inspired to help after a gigantic storm and lots of flooding in our area, a few friends and I, a Houston city services worker, and a couple other
               people we met along the way built HOUAlert as a way of keeping track of disasters and emergencies in Houston.  We built HOUAlert in less than 24 hours
               at the Houston Hackathon, a civic hackathon where every team uses the city's data resources to build something to benefit the city and its citizens.
-              I primarily worked on the Android app and the integration of the ESRI GIS system.
-            </p>
+              I primarily worked on the Android app and the integration of the ESRI GIS system.</p>
             <p>HOUAlert won the prize for the "Best use of ESRI technology".</p>
             <br>
           </div>
         </div>
         <div class="card large sticky-action">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/projects/trapomino-logo.png">
+            <img class="activator" src="https://raw.githubusercontent.com/JackBmann/trapomino/master/Trapomino/Graphics/Title.png">
             <!--<span class="card-title">Trapomino</span>-->
           </div>
           <div class="card-content">
@@ -227,14 +419,11 @@
             <p>Trapomino is a Tetris based game where the player takes on the role of a zoo keeper trying to recapture escaped animals. By rotating and placing
               tetromino blocks on a grid, the player must catch animals by creating “cages” with the shapes. The player must capture a variety of animals, each
               with different abilities that challenge the player in new ways. The player will advance through stages of increasing difficulty and new sets of
-              animals until he reclaims all of the escaped animals.  Trapomino includes a story mode as well as an endless beat-the-high-score gamemode.
-            </p>
+              animals until he reclaims all of the escaped animals.  Trapomino includes a story mode as well as an endless beat-the-high-score gamemode.</p>
             <p>Trapomino was built entirely from scratch using Java.  The music and art is all original, and I came up with the idea for Trapomino's game
-              mechanics and theme one morning while brushing my teeth.
-            </p>
+              mechanics and theme one morning while brushing my teeth.</p>
             <p>Trapomino was the product of a team of four Clear Lake High School Students.  We had previously worked together on the 2014 SET competition making
-              a superhero themed platformer called Project Electus, however we narrowly missed attending BPA Nationals that year.  Team Trapomino consisted of:
-            </p>
+              a superhero themed platformer called Project Electus, however we narrowly missed attending BPA Nationals that year.  Team Trapomino consisted of:</p>
             <p>     -- Micheal Peterson, Programming Lead</p>
             <p>     -- Jack Baumann, Project Lead and Documentation Lead</p>
             <p>     -- Patrick Edelen, Documentation Assistant and Programming Assistant</p>
