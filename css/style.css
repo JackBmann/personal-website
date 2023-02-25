@@ -26,6 +26,13 @@ main {
   height: 25rem;
 }
 
+.bgg-container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+  display: flex;
+}
+
 .icon-block i {
   font-size: 75px;
 }
